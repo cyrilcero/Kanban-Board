@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/button";
+import { Board } from "./Board";
+
 export function HomePage() {
   return (
     <section className="flex flex-col p-8">
@@ -12,6 +15,9 @@ export function HomePage() {
         flow). It can help both agile and DevOps teams establish order in their
         daily work. - Source ( Atlassian )
       </p>
+      <Button> Testing </Button>
+
+      <Board></Board>
     </section>
   );
 }
