@@ -24,7 +24,7 @@ export function HomePage() {
 
       <div className="dropdown-containers flex w-full flex-wrap">
         <Card className="p-8">
-          <CardTitle>Todo</CardTitle>
+          <CardTitle>Backlog</CardTitle>
           <CardDescription>List your things ToDo here:</CardDescription>
           <CardContent>{/* MAP HERE */}</CardContent>
         </Card>
@@ -34,12 +34,12 @@ export function HomePage() {
           <CardContent>{/* MAP HERE */}</CardContent>
         </Card>
         <Card className="p-8">
-          <CardTitle>Todo</CardTitle>
+          <CardTitle>Doing</CardTitle>
           <CardDescription>List your things ToDo here:</CardDescription>
           <CardContent>{/* MAP HERE */}</CardContent>
         </Card>
         <Card className="p-8">
-          <CardTitle>Todo</CardTitle>
+          <CardTitle>Done</CardTitle>
           <CardDescription>List your things ToDo here:</CardDescription>
           <CardContent>{/* MAP HERE */}</CardContent>
         </Card>
