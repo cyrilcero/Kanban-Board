@@ -1,4 +1,10 @@
 import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardTitle,
+} from "@/components/ui/card";
 
 export function HomePage() {
   return (
@@ -15,6 +21,29 @@ export function HomePage() {
         daily work. - Source ( Atlassian )
       </p>
       <Button> Testing </Button>
+
+      <div className="dropdown-containers flex w-full flex-wrap">
+        <Card className="p-8">
+          <CardTitle>Todo</CardTitle>
+          <CardDescription>List your things ToDo here:</CardDescription>
+          <CardContent>{/* MAP HERE */}</CardContent>
+        </Card>
+        <Card className="p-8">
+          <CardTitle>Todo</CardTitle>
+          <CardDescription>List your things ToDo here:</CardDescription>
+          <CardContent>{/* MAP HERE */}</CardContent>
+        </Card>
+        <Card className="p-8">
+          <CardTitle>Todo</CardTitle>
+          <CardDescription>List your things ToDo here:</CardDescription>
+          <CardContent>{/* MAP HERE */}</CardContent>
+        </Card>
+        <Card className="p-8">
+          <CardTitle>Todo</CardTitle>
+          <CardDescription>List your things ToDo here:</CardDescription>
+          <CardContent>{/* MAP HERE */}</CardContent>
+        </Card>
+      </div>
     </section>
   );
 }
