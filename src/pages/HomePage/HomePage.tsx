@@ -1,7 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Board } from "./Board";
+import { useState } from "react";
+import { Form } from "react-router-dom";
 
 export function HomePage() {
+  const [todo, setTodo] = useState([]);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // create card component using title
+  };
   return (
     <section className="flex flex-col p-8">
       <h1 className="text-5xl font-bold py-4">What is a kanban board?</h1>
@@ -15,7 +24,11 @@ export function HomePage() {
         flow). It can help both agile and DevOps teams establish order in their
         daily work. - Source ( Atlassian )
       </p>
-      <Button> Testing </Button>
+      <Button> Add todo item </Button>
+      <Form onSubmit={handleSubmit}>
+        <input value={todo} onChange={(e) => setTodo(e.target.value)} />
+        <button type="submit">Add Card</button>
+      </Form>
 
       <Board></Board>
     </section>
