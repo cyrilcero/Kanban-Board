@@ -1,3 +1,8 @@
+/**
+ * HomePage component that renders the main UI for the kanban board app.
+ * Displays intro text, form to add new todo items, and the Board component.
+ * Manages todo item state with useState hook.
+ */
 import { Button } from "@/components/ui/button";
 import { Board } from "./Board";
 import { useState } from "react";
