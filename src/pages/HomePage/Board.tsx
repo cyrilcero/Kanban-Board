@@ -28,6 +28,11 @@ export function Board() {
         <CardDescription>List your things ToDo here:</CardDescription>
         <CardContent>{/* MAP HERE */}</CardContent>
       </Card>
+      <Card className="p-8">
+        <CardTitle>Review</CardTitle>
+        <CardDescription>List your things ToDo here:</CardDescription>
+        <CardContent>{/* MAP HERE */}</CardContent>
+      </Card>
     </div>
   );
 }
